@@ -1,0 +1,76 @@
+@import url("https://fonts.googleapis.com/css2?family=Baloo+Paaji+2&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+}
+body {
+  background-color: #37383d;
+  font-family: "Roboto", sans-serif;
+}
+.covid {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.covid h1 {
+  font-size: 5rem;
+  margin: 20px 0 40px 0;
+  color: #01ecff;
+  text-shadow: 2px 2px 7px #5d5d5d;
+}
+.covid ul {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 30px;
+  width: 90%;
+}
+.cont {
+  box-sizing: border-box;
+  padding: 60px 0px;
+  list-style: none;
+  background-color: #1f2024;
+  cursor: pointer;
+  flex-basis: 23%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  transition: 0.5s;
+}
+.cont:hover {
+  transform: scale(1.1);
+}
+.cont h2 {
+  color: #fff;
+  font-size: 2.2rem;
+}
+.covid p {
+  color: #747474;
+  font-weight: 600;
+  font-size: 2rem;
+  margin-top: 10px;
+  font-family: "Baloo Paaji 2", cursive;
+}
+
+@media screen and (max-width: 995px) {
+  .covid ul {
+    margin-bottom: 30px;
+  }
+  .cont {
+    flex-basis: 47%;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .covid h1 {
+    font-size: 3.7rem;
+    text-align: center;
+    width: 100%;
+  }
+  .cont {
+    flex-basis: 100%;
+  }
+}
